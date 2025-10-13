@@ -1,0 +1,30 @@
+# Bytecode-Dateien und -Ordner
+__pycache__/
+*.py[cod]
+
+# Spyder Projektdateien
+.spyderproject
+.spyproject
+
+# VS Code Einstellungen
+.vscode/
+
+# Log-Dateien (aber behalte logs/ Ordner)
+*.log
+
+# Temporäre Dateien
+*.tmp
+*.bak
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Test Caches
+.pytest_cache/
+coverage/
+
+# Umgebung
+.venv/
+env/
+venv/
+.env

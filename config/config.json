@@ -1,0 +1,6 @@
+{
+  "documents_and_office" : [".txt", ".md", ".pdf", ".docx", ".xlsx", ".pptx", ".odt"],
+  "compressed_and_archive" : [".zip", ".tar", ".gz", ".tar", ".gz", ".rar", ".7z"],
+  "pictures_and_media" : [".jpg", ".jpeg", ".png", ".gif", ".svg", ".bmp", ".mp3", ".wav", ".mp4", ".avi", ".mov"],
+  "system_and_else" : [".exe", ".dll", ".iso", ".log", ".tmp", ".db"] 
+}
