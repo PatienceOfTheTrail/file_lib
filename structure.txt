@@ -1,0 +1,27 @@
+│   main.py
+│   README.md
+│
+├───config
+│       config.json
+│
+├───data
+│       compressed_and_archive.txt
+│       documents_and_office.txt
+│       pictures_and_media.txt
+│       system_and_else.txt
+│
+├───logs
+│       error.log
+│
+├───src
+│      config_settings.py
+│      dataframe_operator.py
+│      datainterface.py
+│      filesorter.py
+│      filewriter.py
+│      folderaccess.py
+│      logger.py
+│      objectfactory.py
+│      __init__.py
+│   
+└───tests
