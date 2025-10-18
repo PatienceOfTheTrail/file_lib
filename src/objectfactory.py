@@ -5,6 +5,8 @@ Created on Sun Oct 12 22:58:36 2025
 @author: PatienceOfTheTrail
 """
 
+"""Factory class"""
+
 from src.logger import logger
 import sys
 

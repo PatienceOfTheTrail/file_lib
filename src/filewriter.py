@@ -5,10 +5,10 @@ Created on Mon Oct 13 22:08:27 2025
 @author: PatienceOfTheTrail
 """
 
+"""FileWriter class - All operations connected to files: writing and deleting"""
+
 from datetime import date
 import os
-import sys
-import pandas as pd
 from src.logger import logger
 
 class FileWriter():

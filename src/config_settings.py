@@ -5,6 +5,8 @@ Created on Tue Oct 14 01:05:15 2025
 @author: PatienceOfTheTrail
 """
 
+"""Configuration file"""
+
 import os
 import json
 
