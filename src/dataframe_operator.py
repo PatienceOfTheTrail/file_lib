@@ -2,9 +2,8 @@
 """
 Created on Sat Oct 18 21:15:52 2025
 
-@author: Jan
+@author: PatienceOfTheTrail
 """
-
 
 """Pandas Operations"""
 

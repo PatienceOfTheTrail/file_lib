@@ -5,7 +5,6 @@ Created on Sat Oct 18 19:41:26 2025
 @author: PatienceOfTheTrail
 """
 
-
 """All sorting logic"""
 
 import os
