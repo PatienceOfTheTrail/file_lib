@@ -2,12 +2,13 @@
 """
 Created on Mon Oct 13 22:08:27 2025
 
-@author: Jan
+@author: PatienceOfTheTrail
 """
 
 from datetime import date
+import os
 import sys
-
+import pandas as pd
 from src.logger import logger
 
 class FileWriter():
@@ -34,13 +35,28 @@ class FileWriter():
             self.datainterface.system_and_else_text
             ]
     
+    def remove_old_file_lib(self):
+        try:
+            os.remove(self.datainterface.file_lib)
+        except Exception as e:
+            print("!ERROR! removing old file_lib.feather file")
+            logger.error(f"Error removing old file_lib.feather file: {e}")
+    
+    def clear_text_file(self, text_file):
+        try: 
+            with open(text_file, mode= "w") as file:
+                file.write("")    
+        except Exception as e:
+                print("!ERROR! while clearing text libraries.")
+                logger.error(f"Error while clearing text libraries: {e}")
+        
     def clear_files(self):
         while True:
             answer = input("Do you want to clear the files before extracting a new folder? (Y/N) ")
             if answer.lower() == "y":
                 for text_file in self.clear_list:
-                    with open(text_file, mode= "w") as file:
-                        file.write("")           
+                    self.clear_text_file(text_file)
+                self.remove_old_file_lib()   
                 print("All files are cleared!")
                 print("")
                 break
@@ -64,4 +80,10 @@ class FileWriter():
                     for i in list_:
                         file.write(f"- {i}\n")
                     file.write("_________________________________________________\n")
-            
+    
+    def write_to_feather(self):
+        try:
+            self.datainterface.dataframe.to_feather(self.datainterface.file_lib)
+        except Exception as e:
+            print("!ERROR! creating feather library")
+            logger.error(f"Error creating feather library: {e}")

@@ -2,7 +2,7 @@
 """
 Created on Sun Oct 12 22:58:36 2025
 
-@author: Jan
+@author: PatienceOfTheTrail
 """
 
 from src.logger import logger

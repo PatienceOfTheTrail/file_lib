@@ -2,13 +2,15 @@
 """
 Created on Sun Oct 12 22:25:08 2025
 
-@author: Jan
+@author: PatienceOfTheTrail
 """
 
 """DataInterface - for communication between classes and data storage"""
+
 from dataclasses import dataclass, field
 from typing import Optional
 from src import config_settings
+import pandas as pd
 
 @dataclass
 class DataInterface():
@@ -33,3 +35,8 @@ class DataInterface():
     pictures_and_media_text: str = config_settings.pictures_and_media_text
     system_and_else_text: str = config_settings.system_and_else_text
     
+    
+    # for feather export
+    data_dict: dict = field(default_factory=dict)
+    dataframe: pd.DataFrame = field(default_factory=pd.DataFrame)
+    file_lib: str = config_settings.file_lib

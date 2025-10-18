@@ -2,7 +2,7 @@
 """
 Created on Sun Oct 12 22:19:13 2025
 
-@author: Jan
+@author: PatienceOfTheTrail
 """
 
 """FolderReader - Reads folder, extracts files and pushes data to datainterface"""
@@ -29,7 +29,8 @@ class FolderReader():
         print("")
         
     def get_files_from_folder(self):
-        print("Extracting files from folder")
+        print("Extracting files from folder:")
         self.datainterface.files = os.listdir(self.datainterface.folder)
+    
         
         

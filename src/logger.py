@@ -2,7 +2,7 @@
 """
 Created on Mon Oct 13 23:15:39 2025
 
-@author: Jan
+@author: PatienceOfTheTrail
 """
 
 """Error Logger"""
