@@ -8,4 +8,4 @@ The program reads files from a folder, sorts them by file type and appends the f
 - pictures_and_media.txt 
 - system_and_else.txt
 
-Those text files are stored in the folder data. Further more a feather file is created as library.
+Those text files are stored in the folder 'data'. Further more a feather file is created as library. In the feather file the file endings serve as column names.
